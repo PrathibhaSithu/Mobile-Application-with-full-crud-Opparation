@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/bgimggg"
+    android:layout_height="match_parent"
+    tools:context=".activity_update">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activity_add">
+
+        <EditText
+            android:id="@+id/edt_name"
+            android:layout_width="346dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="114dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Name"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:paddingLeft="10dp"
+            android:background="@drawable/view_fields"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/edt_licence"
+            android:layout_width="346dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/view_fields"
+            android:ems="10"
+            android:hint="Driving licence "
+            android:inputType="textPersonName"
+            android:paddingLeft="10dp"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edt_name" />
+
+        <EditText
+            android:id="@+id/edt_nic"
+            android:layout_width="346dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/view_fields"
+            android:ems="10"
+            android:hint="NIC"
+            android:inputType="textPersonName"
+            android:paddingLeft="10dp"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.49"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edt_licence" />
+
+        <EditText
+            android:id="@+id/edt_dob"
+            android:layout_width="346dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/view_fields"
+            android:ems="10"
+            android:hint="DOB"
+            android:inputType="textPersonName"
+            android:paddingLeft="10dp"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.49"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edt_nic" />
+
+        <EditText
+            android:id="@+id/edt_fineId"
+            android:layout_width="346dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/view_fields"
+            android:ems="10"
+            android:hint="Fine ID"
+            android:inputType="textPersonName"
+            android:paddingLeft="10dp"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.49"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edt_dob" />
+
+        <EditText
+            android:id="@+id/edt_fineType"
+            android:layout_width="346dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/view_fields"
+            android:ems="10"
+            android:hint="Fine Type"
+            android:inputType="textPersonName"
+            android:paddingLeft="10dp"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.49"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edt_fineId" />
+
+        <EditText
+            android:id="@+id/edt_value"
+            android:layout_width="346dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/view_fields"
+            android:ems="10"
+            android:hint="Fine Value"
+            android:inputType="textPersonName"
+            android:paddingLeft="10dp"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.49"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edt_fineType" />
+
+        <Button
+            android:id="@+id/btn_update"
+            android:layout_width="333dp"
+            android:layout_height="63dp"
+            android:layout_marginTop="16dp"
+            android:hint="Update"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:background="@drawable/input_text_view"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edt_value"
+            app:layout_constraintVertical_bias="0.05" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="208dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="40dp"
+        android:text="UPDATE"
+        android:textAlignment="center"
+        android:textColor="#000080"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.429"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

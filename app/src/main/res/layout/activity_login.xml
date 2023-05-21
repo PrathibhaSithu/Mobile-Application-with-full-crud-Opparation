@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/lambo"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".Login">
+
+    <TextView
+        android:id="@+id/appName"
+        android:layout_width="411dp"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="BitFine"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="65sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextSizeCheck" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:text="Login"
+        android:textColor="#000000"
+        android:textSize="38sp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:background="@drawable/input_text_view"
+            android:drawableStart="@drawable/user"
+            android:drawablePadding="10dp"
+            android:hint="User Email"
+            android:inputType="textEmailAddress"
+            android:padding="10dp"
+            android:textColorHint="#616161"
+            tools:ignore="VisualLintTextFieldSize" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:passwordToggleEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/input_text_view"
+            android:drawableStart="@drawable/password"
+            android:drawablePadding="10dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            tools:ignore="VisualLintTextFieldSize" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="146dp"
+        android:layout_height="59dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/loginbtn"
+        android:text="Login"
+        android:textSize="25dp" />
+
+
+</LinearLayout>
